@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img img1">
+        <img src="./img/bg_2.jpg" alt="">
+    </div>
+    <div class="img ">
+        <img data-img="http://pic.bizhi360.com/bbpic/39/10339.jpg" class="img2" alt="">
+    </div>
+    <div class="img img3">
+        <img data-img="http://pic.bizhi360.com/bbpic/7/10307.jpg" class="img2" alt="">
+    </div>
+    <script>
+        let imgArr = document.querySelectorAll('.img2')
+        let observer = new IntersectionObserver((e) => {//创建实例，这个构造函数的observer可以对页面元素进行观察，如果实例的isIntersecting变成true
+            //就表示节点在视口范围，unobserve可以取消观察
+            e.forEach(e => {
+                if(e.isIntersecting){
+                    const img = e.target
+                    img.src = img.dataset.img
+                    observer.unobserve(img)
+                    console.log('触发次数')
+                }
+            })
+        })
+        imgArr.forEach(e => {
+            observer.observe(e)//观察图片
+        })
+
+    </script>
+</body>
+
+</html>
