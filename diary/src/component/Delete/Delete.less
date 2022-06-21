@@ -1,0 +1,46 @@
+.delete {
+    width: 100%;
+    .nav {
+        position: fixed;
+        top: 1rem;
+        animation: deleteAnimation .5s;
+    }
+    .footer {
+        width: 90%;
+        position: fixed;
+        bottom: 1rem;
+        animation: deleteAnimation .5s;
+        .deleteIcon {
+            width: 10%;
+            
+            .text {
+                width: 4rem;
+                transition: all 1s;
+            }
+            .icon {
+                margin: 0px 2px !important;
+                font-size: 1.5rem;
+                text-align: center;
+                transition: all 1s;
+            }
+        }
+        .deleteIcon:active {
+            .text {
+                width: 4rem;
+            }
+            .icon {
+                margin: 0px 2px !important;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+@keyframes deleteAnimation {
+    from {
+        transform: translateX(50px);
+    } to {
+        transform: translateX(0);
+    }
+
+}

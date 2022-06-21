@@ -1,0 +1,11 @@
+.main .header {
+  height: 5%;
+}
+.main .nav {
+  height: 5%;
+}
+.main .input {
+  position: absolute;
+  top: 40vh;
+  right: 2vw;
+}

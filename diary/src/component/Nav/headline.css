@@ -1,0 +1,44 @@
+.headline {
+  margin-left: 1rem;
+}
+.headline .title {
+  width: 26vw;
+  display: flex;
+}
+.headline .headline_icon1 {
+  font-size: 1rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  animation: headline_icon1 0.5s;
+  animation-fill-mode: forwards;
+}
+.headline .headline_icon2 {
+  font-size: 1rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  animation: headline_icon2 0.5s;
+  animation-fill-mode: forwards;
+}
+.length {
+  color: gray;
+}
+.headline1 {
+  position: relative;
+  top: 2.6rem;
+}
+@keyframes headline_icon1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes headline_icon2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

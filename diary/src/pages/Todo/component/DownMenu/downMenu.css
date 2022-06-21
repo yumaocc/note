@@ -1,0 +1,73 @@
+.classFyContainer {
+  position: relative;
+  top: 3rem;
+  animation: classFyAnimation 0.5s;
+  color: #595959;
+  z-index: 1;
+}
+.classFyContainer .classFy {
+  width: 100vw;
+  height: 74.5vh;
+  background-color: #f0f0f0;
+  overflow: scroll;
+}
+.classFyContainer .classFy .box1 {
+  width: 100vw;
+  height: 36vh;
+  border-radius: 5px;
+  background-color: white;
+}
+.classFyContainer .classFy .box1 .content {
+  display: flex;
+  height: 9vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.classFyContainer .classFy .box1 .content .icon {
+  font-size: 25px;
+}
+.classFyContainer .classFy .box1 .content .text {
+  width: 80vw;
+  height: 9vh;
+  font-size: 18px;
+  line-height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #f0f0f0;
+}
+.classFyContainer .classFy .box2 {
+  width: 100vw;
+  height: 37.5vh;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  background-color: white;
+  padding: 1rem;
+}
+.classFyContainer .classFy .box2 .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.classFyContainer .classFy .box2 .content .icon_text {
+  font-size: 18px;
+}
+.classFyContainer .classFy .box2 .content .icon_text span {
+  margin-right: 1rem;
+}
+.classFyContainer .footer {
+  width: 100vw;
+  height: 12vh;
+  background-color: #d9d9d9;
+  opacity: 0.5;
+}
+@keyframes classFyAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

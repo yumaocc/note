@@ -1,0 +1,38 @@
+.details {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  animation: detailsAnimation 0.5s;
+}
+.details .detailDate {
+  color: gray !important;
+  display: flex;
+  justify-content: space-between;
+}
+.details .detailIcon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.details Input {
+  border: none !important;
+  margin-top: 3rem;
+  margin-left: -12px;
+  font-size: 2rem;
+  overflow-x: scroll;
+}
+.details TextArea {
+  border: none !important;
+  margin-top: 3rem;
+  margin-left: -15px;
+  font-size: 1rem;
+}
+@keyframes detailsAnimation {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

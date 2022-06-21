@@ -1,0 +1,84 @@
+.classFyContainer {
+    position: relative;
+    top: 3rem;
+    animation: classFyAnimation .5s;
+    color: #595959;
+
+    .classFy {
+        width: 100vw;
+        height: 74.5vh;
+        background-color: #f0f0f0;
+        overflow: scroll;
+
+        .box1 {
+            width: 100vw;
+            height: 36vh;
+            border-radius: 5px;
+            background-color: white;
+
+            .content {
+                display: flex;
+                height: 9vh;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+
+                .icon {
+                    font-size: 25px;
+                }
+
+                .text {
+                    width: 80vw;
+                    height: 9vh;
+                    font-size: 18px;
+                    line-height: 9vh;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: .5px solid #f0f0f0;
+                }
+            }
+        }
+
+        .box2 {
+            width: 100vw;
+            height: 37.5vh;
+            margin-top: .5rem;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1rem;
+
+            .content {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .icon_text {
+                    font-size: 18px;
+
+                    span {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100vw;
+        height: 12vh;
+        background-color: #d9d9d9;
+        opacity: .5;
+    }
+}
+
+@keyframes classFyAnimation {
+    from {
+        transform: translateY(50px);
+        opacity: .5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
